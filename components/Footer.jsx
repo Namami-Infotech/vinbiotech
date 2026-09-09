@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { categories } from "@/data/products";
 import { siteConfig } from "@/data/site";
 
@@ -15,7 +16,15 @@ export default function Footer() {
     <footer className="border-t border-border bg-ink text-white">
       <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-xl font-bold tracking-[0.04em]">{siteConfig.name}</p>
+          <Link href="/" aria-label="Vinboitech home">
+            <Image
+              src="/images/logo/vinboitech.png"
+              alt={siteConfig.name}
+              width={150}
+              height={38}
+              className="h-9 w-auto object-contain"
+            />
+          </Link>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
             {siteConfig.positioning}
           </p>

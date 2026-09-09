@@ -44,6 +44,16 @@ export const metadata = {
     description: siteConfig.description,
     images: ["/images/hero/hero-medical-products.png"],
   },
+  icons: {
+    icon: [
+      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/images/logo/vinboitech-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

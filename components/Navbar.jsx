@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -34,9 +35,14 @@ export default function Navbar() {
     >
       <div className="container-page flex h-[4.5rem] items-center justify-between gap-4">
         <Link href="/" className="focus-ring group rounded-md" aria-label="Vinboitech home">
-          <span className="font-display text-[1.35rem] font-bold tracking-[0.04em] text-ink transition-colors group-hover:text-primary">
-            {siteConfig.name}
-          </span>
+          <Image
+            src="/images/logo/vinboitech.png"
+            alt={siteConfig.name}
+            width={160}
+            height={40}
+            className="h-10 w-auto object-contain transition-opacity group-hover:opacity-80"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
