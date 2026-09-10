@@ -19,24 +19,24 @@ export default function QuoteCTA() {
           <div className="pointer-events-none absolute -bottom-20 left-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
 
           <div className="relative max-w-2xl">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold leading-tight !text-white sm:text-4xl">
               Looking for Medical Products in Bulk?
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/90 sm:text-lg">
-              Tell us what you need and our team will help you with product information,
-              availability and bulk requirements.
+            <p className="mt-4 text-base leading-relaxed !text-white/90 sm:text-lg">
+              Tell us what you need and our team will help you with product
+              information, availability and bulk requirements.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/contact"
-                className="focus-ring inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-primary transition hover:bg-primary-soft"
+                className="focus-ring inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold !text-primary transition hover:bg-primary-soft"
               >
                 Request a Quote
                 <ArrowRight size={16} aria-hidden="true" />
               </Link>
               <Link
                 href="/contact"
-                className="focus-ring inline-flex items-center rounded-full border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                className="focus-ring inline-flex items-center rounded-full border border-white/40 px-5 py-3 text-sm font-semibold !text-white transition hover:bg-white/10"
               >
                 Contact Us
               </Link>
