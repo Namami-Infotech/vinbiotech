@@ -20,7 +20,8 @@ export const categories = [
     slug: "medical-gloves",
     name: "Medical Gloves",
     shortName: "Gloves",
-    description: "Protective gloves suitable for healthcare and hygiene applications.",
+    description:
+      "Protective gloves suitable for healthcare and hygiene applications.",
     image: "/images/products/gloves/main.png",
   },
   {
@@ -39,30 +40,31 @@ export const categories = [
     description: "Reusable and convenient hot/cold therapy solutions.",
     image: "/images/products/gel-packs/main.png",
   },
-  {
-    id: "disposables",
-    slug: "medical-disposables",
-    name: "Medical Disposables",
-    shortName: "Medical Disposables",
-    description: "Essential disposable products for healthcare environments.",
-    image: "/images/products/disposables/main.png",
-  },
-  {
-    id: "hygiene",
-    slug: "hygiene-products",
-    name: "Hygiene Products",
-    shortName: "Hygiene Products",
-    description: "Everyday hygiene solutions for clinical and commercial settings.",
-    image: "/images/products/hygiene/main.png",
-  },
-  {
-    id: "accessories",
-    slug: "healthcare-accessories",
-    name: "Healthcare Accessories",
-    shortName: "Healthcare Accessories",
-    description: "Supporting accessories for medical and care environments.",
-    image: "/images/products/accessories/main.png",
-  },
+  // {
+  //   id: "disposables",
+  //   slug: "medical-disposables",
+  //   name: "Medical Disposables",
+  //   shortName: "Medical Disposables",
+  //   description: "Essential disposable products for healthcare environments.",
+  //   image: "/images/products/disposables/main.png",
+  // },
+  // {
+  //   id: "hygiene",
+  //   slug: "hygiene-products",
+  //   name: "Hygiene Products",
+  //   shortName: "Hygiene Products",
+  //   description:
+  //     "Everyday hygiene solutions for clinical and commercial settings.",
+  //   image: "/images/products/hygiene/main.png",
+  // },
+  // {
+  //   id: "accessories",
+  //   slug: "healthcare-accessories",
+  //   name: "Healthcare Accessories",
+  //   shortName: "Healthcare Accessories",
+  //   description: "Supporting accessories for medical and care environments.",
+  //   image: "/images/products/accessories/main.png",
+  // },
 ];
 
 export const products = [
@@ -89,7 +91,8 @@ export const products = [
       "Clinics and outpatient centres",
       "Pathology and sample collection points",
     ],
-    packaging: "Available in bulk packaging suitable for institutional procurement. Exact pack sizes available on enquiry.",
+    packaging:
+      "Available in bulk packaging suitable for institutional procurement. Exact pack sizes available on enquiry.",
     moq: "Available on enquiry — suitable for bulk B2B orders",
   },
   {
@@ -115,7 +118,8 @@ export const products = [
       "Laboratories and pharmacies",
       "Commercial and institutional hygiene programmes",
     ],
-    packaging: "Boxed quantities available for bulk procurement. Pack configurations shared on enquiry.",
+    packaging:
+      "Boxed quantities available for bulk procurement. Pack configurations shared on enquiry.",
     moq: "Available on enquiry — bulk supply supported",
   },
   {
@@ -141,7 +145,8 @@ export const products = [
       "Laboratory handling",
       "Hygiene and sanitation tasks",
     ],
-    packaging: "Standard boxed packing for institutional distribution. Size assortments available on request.",
+    packaging:
+      "Standard boxed packing for institutional distribution. Size assortments available on request.",
     moq: "Available on enquiry",
   },
   {
@@ -167,7 +172,8 @@ export const products = [
       "Hospital first-aid stations",
       "Workplace and commercial first-aid kits",
     ],
-    packaging: "Assorted pack formats available. Bulk carton options on enquiry.",
+    packaging:
+      "Assorted pack formats available. Bulk carton options on enquiry.",
     moq: "Available on enquiry",
   },
   {
@@ -196,84 +202,84 @@ export const products = [
     packaging: "Individual and multi-pack options available on enquiry.",
     moq: "Available on enquiry",
   },
-  {
-    id: 6,
-    slug: "medical-disposable-assortment",
-    name: "Medical Disposable Assortment",
-    category: "Medical Disposables",
-    categorySlug: "medical-disposables",
-    featured: false,
-    shortDescription:
-      "Essential disposable supplies for everyday healthcare environments.",
-    description:
-      "A practical range of medical disposable products to support clinical hygiene, patient care and facility readiness. Ideal for buyers consolidating disposable supply under one vendor.",
-    image: "/images/products/disposables/main.png",
-    features: [
-      "Core disposable items for healthcare environments",
-      "Designed for everyday clinical utility",
-      "Supports consolidated B2B purchasing",
-      "Scalable for recurring orders",
-    ],
-    applications: [
-      "Hospitals and clinics",
-      "Laboratories",
-      "Healthcare organisations",
-    ],
-    packaging: "Category-wise packing details shared based on selected items.",
-    moq: "Available on enquiry",
-  },
-  {
-    id: 7,
-    slug: "hygiene-care-kit",
-    name: "Hygiene Care Products",
-    category: "Hygiene Products",
-    categorySlug: "hygiene-products",
-    featured: false,
-    shortDescription:
-      "Hygiene solutions for clinical, commercial and institutional environments.",
-    description:
-      "Hygiene products designed to support clean, safe environments across healthcare and commercial facilities. Suitable for buyers seeking consistent hygiene supply.",
-    image: "/images/products/hygiene/main.png",
-    features: [
-      "Practical hygiene formats for daily use",
-      "Suitable for clinical and commercial settings",
-      "Supports facility cleanliness programmes",
-      "Available for bulk procurement",
-    ],
-    applications: [
-      "Healthcare facilities",
-      "Commercial workplaces",
-      "Institutional buyers",
-    ],
-    packaging: "Pack formats shared according to selected hygiene items.",
-    moq: "Available on enquiry",
-  },
-  {
-    id: 8,
-    slug: "healthcare-accessories-set",
-    name: "Healthcare Accessories",
-    category: "Healthcare Accessories",
-    categorySlug: "healthcare-accessories",
-    featured: false,
-    shortDescription:
-      "Supporting accessories that complement medical and care workflows.",
-    description:
-      "Healthcare accessories that help round out procurement needs for clinics, pharmacies and care environments. Useful for buyers looking for complementary products alongside core disposables.",
-    image: "/images/products/accessories/main.png",
-    features: [
-      "Complementary products for care environments",
-      "Practical everyday clinical utility",
-      "Supports broader catalogue procurement",
-      "Available for institutional orders",
-    ],
-    applications: [
-      "Clinics and pharmacies",
-      "Healthcare organisations",
-      "Distributors expanding accessory ranges",
-    ],
-    packaging: "Packaging depends on selected accessory items. Details on enquiry.",
-    moq: "Available on enquiry",
-  },
+  // {
+  //   id: 6,
+  //   slug: "medical-disposable-assortment",
+  //   name: "Medical Disposable Assortment",
+  //   category: "Medical Disposables",
+  //   categorySlug: "medical-disposables",
+  //   featured: false,
+  //   shortDescription:
+  //     "Essential disposable supplies for everyday healthcare environments.",
+  //   description:
+  //     "A practical range of medical disposable products to support clinical hygiene, patient care and facility readiness. Ideal for buyers consolidating disposable supply under one vendor.",
+  //   image: "/images/products/disposables/main.png",
+  //   features: [
+  //     "Core disposable items for healthcare environments",
+  //     "Designed for everyday clinical utility",
+  //     "Supports consolidated B2B purchasing",
+  //     "Scalable for recurring orders",
+  //   ],
+  //   applications: [
+  //     "Hospitals and clinics",
+  //     "Laboratories",
+  //     "Healthcare organisations",
+  //   ],
+  //   packaging: "Category-wise packing details shared based on selected items.",
+  //   moq: "Available on enquiry",
+  // },
+  // {
+  //   id: 7,
+  //   slug: "hygiene-care-kit",
+  //   name: "Hygiene Care Products",
+  //   category: "Hygiene Products",
+  //   categorySlug: "hygiene-products",
+  //   featured: false,
+  //   shortDescription:
+  //     "Hygiene solutions for clinical, commercial and institutional environments.",
+  //   description:
+  //     "Hygiene products designed to support clean, safe environments across healthcare and commercial facilities. Suitable for buyers seeking consistent hygiene supply.",
+  //   image: "/images/products/hygiene/main.png",
+  //   features: [
+  //     "Practical hygiene formats for daily use",
+  //     "Suitable for clinical and commercial settings",
+  //     "Supports facility cleanliness programmes",
+  //     "Available for bulk procurement",
+  //   ],
+  //   applications: [
+  //     "Healthcare facilities",
+  //     "Commercial workplaces",
+  //     "Institutional buyers",
+  //   ],
+  //   packaging: "Pack formats shared according to selected hygiene items.",
+  //   moq: "Available on enquiry",
+  // },
+  // {
+  //   id: 8,
+  //   slug: "healthcare-accessories-set",
+  //   name: "Healthcare Accessories",
+  //   category: "Healthcare Accessories",
+  //   categorySlug: "healthcare-accessories",
+  //   featured: false,
+  //   shortDescription:
+  //     "Supporting accessories that complement medical and care workflows.",
+  //   description:
+  //     "Healthcare accessories that help round out procurement needs for clinics, pharmacies and care environments. Useful for buyers looking for complementary products alongside core disposables.",
+  //   image: "/images/products/accessories/main.png",
+  //   features: [
+  //     "Complementary products for care environments",
+  //     "Practical everyday clinical utility",
+  //     "Supports broader catalogue procurement",
+  //     "Available for institutional orders",
+  //   ],
+  //   applications: [
+  //     "Clinics and pharmacies",
+  //     "Healthcare organisations",
+  //     "Distributors expanding accessory ranges",
+  //   ],
+  //   packaging: "Packaging depends on selected accessory items. Details on enquiry.",
+  //   moq: "Available on enquiry",
+  // },
 ];
 
 export function getProductBySlug(slug) {
