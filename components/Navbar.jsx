@@ -40,7 +40,7 @@ export default function Navbar() {
           aria-label="Vinbiotech home"
         >
           <Image
-            src="/images/logo/vinbiotech1.png"
+            src="/images/logo/vinbiotech2.png"
             alt={siteConfig.name}
             width={160}
             height={40}

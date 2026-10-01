@@ -18,7 +18,7 @@ export default function Footer() {
         <div>
           <Link href="/" aria-label="vinbiotech home">
             <Image
-              src="/images/logo/vinbiotech1.png"
+              src="/images/logo/vinbiotech2.png"
               alt={siteConfig.name}
               width={150}
               height={38}
