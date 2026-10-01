@@ -55,13 +55,16 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-xl"
         >
-          <span className="section-eyebrow">Trusted Healthcare Product Supplier</span>
+          <span className="section-eyebrow">
+            Trusted Healthcare Product Supplier
+          </span>
           <h1 className="mt-5 text-[2.15rem] font-bold leading-[1.12] text-ink sm:text-5xl lg:text-[3.35rem]">
             Reliable Medical &amp; Healthcare Products for Every Need
           </h1>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
-            Vinboitech supplies quality medical, healthcare, hygiene and disposable
-            products to hospitals, clinics, distributors and businesses.
+            vinbiotech supplies quality medical, healthcare, hygiene and
+            disposable products to hospitals, clinics, distributors and
+            businesses.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/products" className="btn-primary focus-ring">
@@ -101,11 +104,22 @@ export default function Hero() {
               transition={{
                 opacity: { duration: 0.5, delay: item.delay },
                 scale: { duration: 0.5, delay: item.delay },
-                y: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: item.delay },
+                y: {
+                  duration: 5.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: item.delay,
+                },
               }}
             >
               <div className="relative aspect-square w-full overflow-hidden rounded-xl">
-                <Image src={item.src} alt={item.alt} fill sizes="120px" className="object-cover" />
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="120px"
+                  className="object-cover"
+                />
               </div>
             </motion.div>
           ))}

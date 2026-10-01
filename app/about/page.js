@@ -6,7 +6,7 @@ import { aboutStats } from "@/data/site";
 export const metadata = {
   title: "About Us",
   description:
-    "Learn about Vinboitech — a B2B supplier of medical, healthcare, hygiene and disposable products focused on quality and reliable supply.",
+    "Learn about vinbiotech — a B2B supplier of medical, healthcare, hygiene and disposable products focused on quality and reliable supply.",
 };
 
 export default function AboutPage() {
@@ -15,13 +15,14 @@ export default function AboutPage() {
       <section className="gradient-mesh pt-28 pb-16 sm:pt-32">
         <div className="container-page grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <span className="section-eyebrow">About Vinboitech</span>
+            <span className="section-eyebrow">About vinbiotech</span>
             <h1 className="mt-4 text-4xl font-bold text-ink sm:text-5xl">
               Healthcare Products You Can Rely On
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-              Vinboitech is a B2B supplier focused on medical, healthcare, hygiene and
-              disposable products for hospitals, clinics, distributors and businesses.
+              vinbiotech is a B2B supplier focused on medical, healthcare,
+              hygiene and disposable products for hospitals, clinics,
+              distributors and businesses.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/products" className="btn-primary focus-ring">
@@ -51,18 +52,20 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-ink">Our Focus</h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed">
               <p>
-                We emphasise quality, reliability, consistent supply, professional service
-                and customer satisfaction in every enquiry we receive.
+                We emphasise quality, reliability, consistent supply,
+                professional service and customer satisfaction in every enquiry
+                we receive.
               </p>
               <p>
-                Whether you are sourcing specimen containers, protective disposables,
-                wound-care items or hygiene products, our catalogue is structured to support
-                practical procurement conversations for institutional and commercial buyers.
+                Whether you are sourcing specimen containers, protective
+                disposables, wound-care items or hygiene products, our catalogue
+                is structured to support practical procurement conversations for
+                institutional and commercial buyers.
               </p>
               <p>
-                Company history, facility details and certifications can be added here once
-                confirmed. Until then, contact our team for product information and bulk
-                requirements.
+                Company history, facility details and certifications can be
+                added here once confirmed. Until then, contact our team for
+                product information and bulk requirements.
               </p>
             </div>
           </div>
@@ -73,8 +76,12 @@ export default function AboutPage() {
                 key={stat.label}
                 className="rounded-2xl border border-border bg-surface-alt/70 p-4"
               >
-                <p className="text-lg font-semibold text-primary sm:text-xl">{stat.label}</p>
-                <p className="mt-1 text-xs text-muted sm:text-sm">{stat.detail}</p>
+                <p className="text-lg font-semibold text-primary sm:text-xl">
+                  {stat.label}
+                </p>
+                <p className="mt-1 text-xs text-muted sm:text-sm">
+                  {stat.detail}
+                </p>
               </div>
             ))}
           </div>

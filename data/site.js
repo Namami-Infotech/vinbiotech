@@ -1,13 +1,14 @@
 export const siteConfig = {
-  name: "VINBOITECH",
-  shortName: "Vinboitech",
+  name: "vinbioTECH",
+  shortName: "vinbiotech",
   tagline: "Quality Healthcare Products. Reliable Supply.",
   positioning: "Medical & Healthcare Products Supplier",
   description:
-    "Vinboitech supplies quality medical, healthcare, hygiene and disposable products to hospitals, clinics, distributors and businesses.",
-  url: "https://vinboitech.com",
+    "vinbiotech supplies quality medical, healthcare, hygiene and disposable products to hospitals, clinics, distributors and businesses.",
+  url: "https://vinbiotech.com",
   contact: {
-    email: "enquiries@vinboitech.example",
+    // email: "pradeepmishra9627@gmail.com",
+    email: "Vinbiotechdel@gmail.com",
     phone: "+91 87005 76492",
     address: "DPT - 303, DLF Prime Tower,Okhla Phase - 1, New Delhi - 110020",
     businessHours: "Monday – Saturday, 9:00 AM – 6:00 PM IST",
@@ -21,7 +22,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
   { href: "/about", label: "About Us" },
-  { href: "/#why-vinboitech", label: "Why Vinboitech" },
+  { href: "/#why-vinbiotech", label: "Why vinbiotech" },
   { href: "/contact", label: "Contact" },
 ];
 

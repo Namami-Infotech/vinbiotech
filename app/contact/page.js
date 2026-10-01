@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 export const metadata = {
   title: "Contact / Request a Quote",
   description:
-    "Request a quote or product enquiry from Vinboitech for medical, healthcare, hygiene and disposable products.",
+    "Request a quote or product enquiry from vinbiotech for medical, healthcare, hygiene and disposable products.",
 };
 
 export default function ContactPage() {
@@ -20,8 +20,8 @@ export default function ContactPage() {
             Request a Quote
           </h1>
           <p className="mt-4 text-lg text-muted">
-            Share your product requirements and our team will help with information,
-            availability and bulk order discussions.
+            Share your product requirements and our team will help with
+            information, availability and bulk order discussions.
           </p>
         </div>
       </section>
@@ -41,7 +41,9 @@ export default function ContactPage() {
 
           <Suspense
             fallback={
-              <div className="card-surface p-8 text-muted">Loading enquiry form…</div>
+              <div className="card-surface p-8 text-muted">
+                Loading enquiry form…
+              </div>
             }
           >
             <ContactForm />
@@ -55,7 +57,9 @@ export default function ContactPage() {
 function ContactItem({ label, value }) {
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{label}</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
+        {label}
+      </p>
       <p className="mt-1 text-sm text-ink">{value}</p>
     </div>
   );

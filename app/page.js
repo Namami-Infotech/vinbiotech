@@ -9,9 +9,9 @@ import { categories, getFeaturedProducts } from "@/data/products";
 import { aboutStats, industries, whyChoose } from "@/data/site";
 
 export const metadata = {
-  title: "Vinboitech | Medical & Healthcare Products Supplier",
+  title: "vinbiotech | Medical & Healthcare Products Supplier",
   description:
-    "Vinboitech supplies quality medical, healthcare, hygiene and disposable products to hospitals, clinics, distributors and businesses.",
+    "vinbiotech supplies quality medical, healthcare, hygiene and disposable products to hospitals, clinics, distributors and businesses.",
 };
 
 export default function HomePage() {

@@ -37,14 +37,14 @@ export default function AboutPreview({ stats }) {
             Healthcare Products You Can Rely On
           </h2>
           <p className="mt-4 text-muted leading-relaxed">
-            Vinboitech focuses on supplying healthcare, medical, hygiene and disposable
-            products with an emphasis on quality, reliability, consistent supply,
-            professional service and customer satisfaction.
+            vinbiotech focuses on supplying healthcare, medical, hygiene and
+            disposable products with an emphasis on quality, reliability,
+            consistent supply, professional service and customer satisfaction.
           </p>
           <p className="mt-3 text-muted leading-relaxed">
-            We work with hospitals, clinics, distributors and businesses that need a
-            clear, dependable B2B supply partner for everyday medical and hygiene
-            requirements.
+            We work with hospitals, clinics, distributors and businesses that
+            need a clear, dependable B2B supply partner for everyday medical and
+            hygiene requirements.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
@@ -70,7 +70,9 @@ function StatCard({ stat, index }) {
       transition={{ duration: 0.4, delay: index * 0.08 }}
       className="rounded-2xl border border-border bg-surface-alt/70 p-4"
     >
-      <p className="text-lg font-semibold text-primary sm:text-xl">{stat.label}</p>
+      <p className="text-lg font-semibold text-primary sm:text-xl">
+        {stat.label}
+      </p>
       <p className="mt-1 text-xs text-muted sm:text-sm">{stat.detail}</p>
     </motion.div>
   );

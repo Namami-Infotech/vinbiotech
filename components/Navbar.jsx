@@ -34,9 +34,13 @@ export default function Navbar() {
       }`}
     >
       <div className="container-page flex h-[4.5rem] items-center justify-between gap-4">
-        <Link href="/" className="focus-ring group rounded-md" aria-label="Vinboitech home">
+        <Link
+          href="/"
+          className="focus-ring group rounded-md"
+          aria-label="Vinbiotech home"
+        >
           <Image
-            src="/images/logo/vinboitech.png"
+            src="/images/logo/vinbiotech1.png"
             alt={siteConfig.name}
             width={160}
             height={40}
@@ -83,7 +87,10 @@ export default function Navbar() {
             transition={{ duration: 0.28, ease: "easeOut" }}
             className="overflow-hidden border-t border-border bg-white lg:hidden"
           >
-            <nav className="container-page flex flex-col gap-1 py-4" aria-label="Mobile">
+            <nav
+              className="container-page flex flex-col gap-1 py-4"
+              aria-label="Mobile"
+            >
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.href}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { products } from "@/data/products";
 
@@ -18,18 +18,17 @@ export default function ContactForm() {
   const searchParams = useSearchParams();
   const productParam = searchParams.get("product") || "";
 
-  const [form, setForm] = useState(initialState);
+  const [form, setForm] = useState(() => ({
+    ...initialState,
+    product: productParam,
+  }));
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    if (productParam) {
-      setForm((prev) => ({ ...prev, product: productParam }));
-    }
-  }, [productParam]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const productOptions = useMemo(
     () => products.map((product) => product.name),
-    []
+    [],
   );
 
   function handleChange(event) {
@@ -37,9 +36,28 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to send your enquiry. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -47,16 +65,15 @@ export default function ContactForm() {
       <div className="card-surface p-8 text-center sm:p-10" role="status">
         <h3 className="text-2xl font-semibold text-ink">Enquiry received</h3>
         <p className="mt-3 text-muted">
-          Thank you for contacting Vinboitech. This demo form confirms your enquiry
-          locally. Connect your preferred email or CRM endpoint to begin receiving live
-          submissions.
+          Thank you for contacting vinbiotech. Your enquiry has been sent to our
+          team, and we will be in touch soon.
         </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="card-surface space-y-5 p-6 sm:p-8" noValidate>
+    <form onSubmit={handleSubmit} className="card-surface space-y-5 p-6 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label="Name" htmlFor="name" required>
           <input
@@ -144,8 +161,17 @@ export default function ContactForm() {
         />
       </Field>
 
-      <button type="submit" className="btn-primary focus-ring w-full sm:w-auto">
-        Send Enquiry
+      {submitError ? (
+        <p className="text-sm text-red-700" role="alert">
+          {submitError}
+        </p>
+      ) : null}
+      <button
+        type="submit"
+        className="btn-primary focus-ring w-full sm:w-auto"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Sending…" : "Send Enquiry"}
       </button>
     </form>
   );

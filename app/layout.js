@@ -34,7 +34,7 @@ export const metadata = {
         url: "/images/hero/hero-medical-products.png",
         width: 1200,
         height: 675,
-        alt: "Vinboitech medical and healthcare products",
+        alt: "vinbiotech medical and healthcare products",
       },
     ],
   },
@@ -46,13 +46,25 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "512x512" },
-      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "32x32" },
+      {
+        url: "/images/logo/vinbiotech-icon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+      {
+        url: "/images/logo/vinbiotech-icon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
     ],
     apple: [
-      { url: "/images/logo/vinboitech-icon.png", type: "image/png", sizes: "512x512" },
+      {
+        url: "/images/logo/vinbiotech-icon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
     ],
-    shortcut: "/images/logo/vinboitech-icon.png",
+    shortcut: "/images/logo/vinbiotech-icon.png",
   },
 };
 

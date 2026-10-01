@@ -13,16 +13,16 @@ const icons = {
 
 export default function WhyChooseUs({ items }) {
   return (
-    <section id="why-vinboitech" className="section-pad bg-white">
+    <section id="why-vinbiotech" className="section-pad bg-white">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-eyebrow">Why Vinboitech</span>
+          <span className="section-eyebrow">Why vinbiotech</span>
           <h2 className="mt-4 text-3xl font-bold text-ink sm:text-4xl">
             Built for Professional B2B Healthcare Supply
           </h2>
           <p className="mt-4 text-muted">
-            A practical partner for buyers who need quality products, clear communication
-            and dependable fulfilment.
+            A practical partner for buyers who need quality products, clear
+            communication and dependable fulfilment.
           </p>
         </div>
 
@@ -41,8 +41,12 @@ export default function WhyChooseUs({ items }) {
                 <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-soft text-primary">
                   <Icon size={22} strokeWidth={1.75} aria-hidden="true" />
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-ink">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
+                <h3 className="mt-5 text-xl font-semibold text-ink">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {item.description}
+                </p>
               </motion.article>
             );
           })}

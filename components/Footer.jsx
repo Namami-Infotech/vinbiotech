@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 
 const companyLinks = [
   { href: "/about", label: "About Us" },
-  { href: "/#why-vinboitech", label: "Why Vinboitech" },
+  { href: "/#why-vinbiotech", label: "Why vinbiotech" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -16,9 +16,9 @@ export default function Footer() {
     <footer className="border-t border-border bg-ink text-white">
       <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Link href="/" aria-label="Vinboitech home">
+          <Link href="/" aria-label="vinbiotech home">
             <Image
-              src="/images/logo/vinboitech.png"
+              src="/images/logo/vinbiotech1.png"
               alt={siteConfig.name}
               width={150}
               height={38}
@@ -94,7 +94,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col gap-2 py-5 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Vinboitech. All Rights Reserved.</p>
+          <p>© 2026 vinbiotech. All Rights Reserved.</p>
           <p>Medical &amp; Healthcare Product Supplier</p>
         </div>
       </div>

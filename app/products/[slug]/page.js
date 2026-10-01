@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     title: product.name,
     description: product.shortDescription,
     openGraph: {
-      title: `${product.name} | Vinboitech`,
+      title: `${product.name} | vinbiotech`,
       description: product.shortDescription,
       images: [{ url: product.image, alt: product.name }],
     },
@@ -41,7 +41,9 @@ export default async function ProductDetailPage({ params }) {
 
   const related = products
     .filter(
-      (item) => item.categorySlug === product.categorySlug && item.slug !== product.slug
+      (item) =>
+        item.categorySlug === product.categorySlug &&
+        item.slug !== product.slug,
     )
     .slice(0, 3);
 
@@ -64,8 +66,12 @@ export default async function ProductDetailPage({ params }) {
             <p className="text-sm font-semibold uppercase tracking-[0.08em] text-primary">
               {product.category}
             </p>
-            <h1 className="mt-3 text-4xl font-bold text-ink sm:text-5xl">{product.name}</h1>
-            <p className="mt-5 text-lg leading-relaxed text-muted">{product.description}</p>
+            <h1 className="mt-3 text-4xl font-bold text-ink sm:text-5xl">
+              {product.name}
+            </h1>
+            <p className="mt-5 text-lg leading-relaxed text-muted">
+              {product.description}
+            </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -84,13 +90,17 @@ export default async function ProductDetailPage({ params }) {
                 <dt className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
                   Packaging
                 </dt>
-                <dd className="mt-2 text-sm leading-relaxed text-ink">{product.packaging}</dd>
+                <dd className="mt-2 text-sm leading-relaxed text-ink">
+                  {product.packaging}
+                </dd>
               </div>
               <div className="rounded-2xl border border-border bg-white p-4">
                 <dt className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">
                   MOQ
                 </dt>
-                <dd className="mt-2 text-sm leading-relaxed text-ink">{product.moq}</dd>
+                <dd className="mt-2 text-sm leading-relaxed text-ink">
+                  {product.moq}
+                </dd>
               </div>
             </dl>
           </div>
@@ -107,7 +117,10 @@ export default async function ProductDetailPage({ params }) {
                   key={feature}
                   className="flex gap-3 rounded-xl border border-border bg-surface-alt/50 px-4 py-3 text-sm text-ink"
                 >
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                  <span
+                    className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary"
+                    aria-hidden="true"
+                  />
                   {feature}
                 </li>
               ))}
@@ -121,7 +134,10 @@ export default async function ProductDetailPage({ params }) {
                   key={application}
                   className="flex gap-3 rounded-xl border border-border bg-surface-alt/50 px-4 py-3 text-sm text-ink"
                 >
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                  <span
+                    className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent"
+                    aria-hidden="true"
+                  />
                   {application}
                 </li>
               ))}

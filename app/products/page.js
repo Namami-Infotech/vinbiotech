@@ -5,7 +5,7 @@ import QuoteCTA from "@/components/QuoteCTA";
 export const metadata = {
   title: "Products",
   description:
-    "Browse Vinboitech medical and healthcare product categories including urine containers, masks, gloves, bandages, gel packs and disposables.",
+    "Browse vinbiotech medical and healthcare product categories including urine containers, masks, gloves, bandages, gel packs and disposables.",
 };
 
 export default function ProductsPage() {
@@ -18,8 +18,8 @@ export default function ProductsPage() {
             Medical &amp; Healthcare Product Range
           </h1>
           <p className="mt-4 text-lg text-muted">
-            Explore our categories and request a quote for product details, availability
-            and bulk requirements. Pricing is provided on enquiry.
+            Explore our categories and request a quote for product details,
+            availability and bulk requirements. Pricing is provided on enquiry.
           </p>
         </div>
       </section>

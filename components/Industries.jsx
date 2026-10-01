@@ -13,8 +13,9 @@ export default function Industries({ industries }) {
             Supporting Healthcare Buyers Across Segments
           </h2>
           <p className="mt-4 text-muted">
-            From clinical facilities to distribution partners, Vinboitech supports
-            professional buyers with practical medical and hygiene product supply.
+            From clinical facilities to distribution partners, vinbiotech
+            supports professional buyers with practical medical and hygiene
+            product supply.
           </p>
         </div>
 
@@ -41,7 +42,9 @@ export default function Industries({ industries }) {
                   {industry.name}
                 </h3>
               </div>
-              <p className="p-4 text-sm leading-relaxed text-muted">{industry.description}</p>
+              <p className="p-4 text-sm leading-relaxed text-muted">
+                {industry.description}
+              </p>
             </motion.article>
           ))}
         </div>
